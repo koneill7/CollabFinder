@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import os
-
 import flask
 import google.oauth2.credentials
 import google_auth_oauthlib.flow
