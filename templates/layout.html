@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}"></strong>
+    <title>Youtube Collab Finder</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <h1 class="web_title">Youtube Collab Finder</h1>
+        <strong><nav>
+          <ul class="menu">
+              <li><a href="{{ url_for('home') }}">Home</a></li>
+              <li><a href="{{ url_for('about') }}">About</a></li>
+          </ul>
+      </nav></strong>
+      </div>
+    </header>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  </body>
+</html>
